@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A83AF339-E700-4C0D-9EF7-F91D3E64A4A0}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\st. peter guest\\documents\\ralph\\crud\\servicelayer\\commonservices\\modeldataannotationcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A83AF339-E700-4C0D-9EF7-F91D3E64A4A0}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\commonservices\\modeldataannotationcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A83AF339-E700-4C0D-9EF7-F91D3E64A4A0}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\st. peter guest\\documents\\ralph\\crud\\servicelayer\\commonservices\\imodeldataannotationcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A83AF339-E700-4C0D-9EF7-F91D3E64A4A0}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\commonservices\\imodeldataannotationcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IModelDataAnnotationCheck.cs",
+              "DocumentMoniker": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\ServiceLayer\\CommonServices\\IModelDataAnnotationCheck.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\CommonServices\\IModelDataAnnotationCheck.cs",
+              "ToolTip": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\ServiceLayer\\CommonServices\\IModelDataAnnotationCheck.cs",
+              "RelativeToolTip": "ServiceLayer\\CommonServices\\IModelDataAnnotationCheck.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:31:57.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ModelDataAnnotationCheck.cs",
+              "DocumentMoniker": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\ServiceLayer\\CommonServices\\ModelDataAnnotationCheck.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\CommonServices\\ModelDataAnnotationCheck.cs",
+              "ToolTip": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\ServiceLayer\\CommonServices\\ModelDataAnnotationCheck.cs",
+              "RelativeToolTip": "ServiceLayer\\CommonServices\\ModelDataAnnotationCheck.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:31:08.788Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -42,11 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="CommonServices\IModelDataAnnotationCheck.cs" />
     <Compile Include="CommonServices\ModelDataAnnotationCheck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\PetsServices\IPetsRepository.cs" />
     <Compile Include="Services\PetsServices\IPetsServices.cs" />
+    <Compile Include="Services\PetsServices\PetsServices.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

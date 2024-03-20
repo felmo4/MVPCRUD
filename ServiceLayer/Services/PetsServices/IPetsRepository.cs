@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ServiceLayer.Services.PetsServices
 {
-    interface IPetsRepository
+    public interface IPetsRepository
     {
         void Add(PetsModel petsModel);
         void Edit(PetsModel petsModel);

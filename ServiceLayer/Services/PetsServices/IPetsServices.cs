@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ServiceLayer.Services.PetsServices
 {
-    interface IPetsServices
+    public interface IPetsServices
     {
         void ValidateModel(PetsModel petsModel);
     }
