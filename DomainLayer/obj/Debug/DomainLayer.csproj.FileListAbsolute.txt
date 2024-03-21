@@ -1,0 +1,6 @@
+C:\Users\St. Peter Guest\Documents\Ralph\CRUD\DomainLayer\bin\Debug\DomainLayer.dll
+C:\Users\St. Peter Guest\Documents\Ralph\CRUD\DomainLayer\bin\Debug\DomainLayer.pdb
+C:\Users\St. Peter Guest\Documents\Ralph\CRUD\DomainLayer\obj\Debug\DomainLayer.csproj.AssemblyReference.cache
+C:\Users\St. Peter Guest\Documents\Ralph\CRUD\DomainLayer\obj\Debug\DomainLayer.csproj.CoreCompileInputs.cache
+C:\Users\St. Peter Guest\Documents\Ralph\CRUD\DomainLayer\obj\Debug\DomainLayer.dll
+C:\Users\St. Peter Guest\Documents\Ralph\CRUD\DomainLayer\obj\Debug\DomainLayer.pdb

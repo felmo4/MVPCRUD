@@ -1,0 +1,6 @@
+C:\Users\St. Peter Guest\Documents\Ralph\CRUD\CommonComponents\bin\Debug\CommonComponents.dll
+C:\Users\St. Peter Guest\Documents\Ralph\CRUD\CommonComponents\bin\Debug\CommonComponents.pdb
+C:\Users\St. Peter Guest\Documents\Ralph\CRUD\CommonComponents\obj\Debug\CommonComponents.csproj.AssemblyReference.cache
+C:\Users\St. Peter Guest\Documents\Ralph\CRUD\CommonComponents\obj\Debug\CommonComponents.csproj.CoreCompileInputs.cache
+C:\Users\St. Peter Guest\Documents\Ralph\CRUD\CommonComponents\obj\Debug\CommonComponents.dll
+C:\Users\St. Peter Guest\Documents\Ralph\CRUD\CommonComponents\obj\Debug\CommonComponents.pdb

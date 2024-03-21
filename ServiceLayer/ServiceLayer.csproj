@@ -51,6 +51,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\CommonComponents\CommonComponents.csproj">
+      <Project>{6a668936-f44d-4ac0-a9d5-0052abb7bc51}</Project>
+      <Name>CommonComponents</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DomainLayer\DomainLayer.csproj">
       <Project>{a5b487f4-582f-4f0e-9469-fb76c40a577b}</Project>
       <Name>DomainLayer</Name>

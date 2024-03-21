@@ -9,6 +9,7 @@ namespace ServiceLayer.Services.PetsServices
 {
     public interface IPetsServices
     {
-        void ValidateModel(PetsModel petsModel);
+        void ValidateModel(IPetsModel petsModel);
+        void ValidateModelDataAnnotations(IPetsModel petsModel);
     }
 }

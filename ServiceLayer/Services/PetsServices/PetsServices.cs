@@ -2,6 +2,7 @@
 using ServiceLayer.CommonServices;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,17 +20,17 @@ namespace ServiceLayer.Services.PetsServices
             _petsRepository = petsRepository;
         }
 
-        public void Add(PetsModel petsModel)
+        public void Add(IPetsModel petsModel)
         {
             _petsRepository.Add(petsModel);
         }
 
-        public void Delete(PetsModel petsModel)
+        public void Delete(IPetsModel petsModel)
         {
-            _petsRepository.Delete(petsModel);
+            _petsRepository?.Delete(petsModel);
         }
 
-        public void Edit(PetsModel petsModel)
+        public void Edit(IPetsModel petsModel)
         {
             _petsRepository.Edit(petsModel);
         }
@@ -41,12 +42,18 @@ namespace ServiceLayer.Services.PetsServices
 
         public PetsModel GetByID(int id)
         {
-            return _petsRepository.GetByID(id);
+            return _petsRepository.GetByID(id); 
         }
 
-        void IPetsServices.ValidateModel(PetsModel petsModel)
+        public void ValidateModel(IPetsModel petsModel)
         {
-            throw new NotImplementedException();
+            _modelDataAnnotationCheck.ValidateModelDataAnnotations(petsModel);
         }
+
+        public void ValidateModelDataAnnotations(IPetsModel petsModel)
+        {
+            _modelDataAnnotationCheck.ValidateModelDataAnnotations(petsModel);
+        }
+
     }
 }

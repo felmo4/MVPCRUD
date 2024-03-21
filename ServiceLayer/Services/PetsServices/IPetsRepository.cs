@@ -9,9 +9,9 @@ namespace ServiceLayer.Services.PetsServices
 {
     public interface IPetsRepository
     {
-        void Add(PetsModel petsModel);
-        void Edit(PetsModel petsModel);
-        void Delete(PetsModel petsModel);
+        void Add(IPetsModel petsModel);
+        void Edit(IPetsModel petsModel);
+        void Delete(IPetsModel petsModel);
 
         IEnumerable<PetsModel> GetAll();
         PetsModel GetByID(int id);
