@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace PresentationLayer.Common
 {
-    internal class ButtonHelper
+    static public class ButtonHelper
     {
         static public void SetToBorderless(Button button)
         {
@@ -33,7 +33,7 @@ namespace PresentationLayer.Common
             Cursor.Current = Cursors.Hand;
         }
 
-        static private void OnBorderlessMouseLeaveEventRaised (object sender, MouseEventArgs e)
+        static private void OnBorderlessMouseLeaveEventRaised (object sender, EventArgs e)
         {
             Cursor.Current = Cursors.Default;
         }
@@ -49,6 +49,13 @@ namespace PresentationLayer.Common
             {
                 underlineLabel.Visible = visibility; 
             }
+        }
+
+        static public void SetUnderlinePosition(Button button, Label underlineLabel)
+        {
+            underlineLabel.Width = button.Bounds.Width - (int)(button.Bounds.Width * .15); 
+            underlineLabel.Left = button.Bounds.Left - (int)(button.Bounds.Width * .08);
+            underlineLabel.Top = button.Top + button.Height;
         }
     }
 }
