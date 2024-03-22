@@ -104,7 +104,7 @@ namespace InfrastructureLayer.DataAccess.Repositories.Specific.Pets
                     throw new DataAccessException(ex.Message, ex.InnerException, dataAccessStatus);
                 }
 
-                string sql = "UPDATE tblpets SET petname = @petname, petbreed = @petbreed, petbday = @petbday" +
+                string sql = "UPDATE tblpets SET petname = @petname, petbreed = @petbreed, petbday = @petbday " +
                     "WHERE petID = @petId";
 
                 using (MySqlCommand cmd = new MySqlCommand(sql, mySqlConnection))
@@ -188,7 +188,7 @@ namespace InfrastructureLayer.DataAccess.Repositories.Specific.Pets
 
                     cmd.CommandText = sql;
                     cmd.Prepare();
-                    cmd.Parameters.AddWithValue("@petId", petsModel.petID);
+                    //cmd.Parameters.AddWithValue("@petId", petsModel.petID);
                     try
                     {
                         cmd.ExecuteNonQuery();

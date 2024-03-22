@@ -20,7 +20,7 @@ namespace DomainLayer.Models.Pets
         public string petbreed { get; set; }
 
         [Required(ErrorMessage = "Pet birthday is required")]
-        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
+        [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd}")]
         public string petbday { get; set; }
     }
 }

@@ -99,6 +99,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\Repositories\Specific\BaseSpecificRepository.cs" />
     <Compile Include="DataAccess\Repositories\Specific\Pets\PetsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

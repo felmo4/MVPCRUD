@@ -49,7 +49,7 @@ namespace ServiceLayer.Tests
         public void ShouldReturnPetModelMatchingID()
         {
             PetsModel petsModel = null;
-            int idToGet = 2;
+            int idToGet = 3;
 
             try
             {
@@ -78,8 +78,105 @@ namespace ServiceLayer.Tests
             {
                 petname = "Uchu",
                 petbreed = "Special",
-                petbday = "02-15-2015",
+                petbday = "2015/02/15"
             };
+            bool operationSucceeded = false;
+            string formattedJsonStr = string.Empty;
+
+            try
+            {
+                _petServices.Add(pm);
+                operationSucceeded = true;
+            }
+            catch(DataAccessException ex)
+            {
+                operationSucceeded = ex.DataAccessStatusInfo.OperationSucceeded;
+                string dataAccessStatusJsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(ex.DataAccessStatusInfo);
+                formattedJsonStr = JToken.Parse(dataAccessStatusJsonStr).ToString();
+            }
+
+            try
+            {
+                Assert.True(operationSucceeded);
+                _testOutputHelper.WriteLine("The record was successfully added");
+            }
+            finally
+            {
+                _testOutputHelper.WriteLine(formattedJsonStr);
+            }
+
+        }
+
+        [Fact]
+        public void ShouldReturnSuccessForDelete()
+        {
+            PetsModel pm = new PetsModel()
+            {
+                petID = 1,
+                petname = "Uchu",
+                petbreed = "Special",
+                petbday = "2015/02/15"
+            };
+            bool operationSucceeded = false;
+            string formattedJsonStr = string.Empty;
+
+            try
+            {
+                _petServices.Delete(pm);
+                operationSucceeded = true;
+            }
+            catch (DataAccessException ex)
+            {
+                operationSucceeded = ex.DataAccessStatusInfo.OperationSucceeded;
+                string dataAccessStatusJsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(ex.DataAccessStatusInfo);
+                formattedJsonStr = JToken.Parse(dataAccessStatusJsonStr).ToString();
+            }
+
+            try
+            {
+                Assert.True(operationSucceeded);
+                _testOutputHelper.WriteLine("The record was successfully deleted");
+            }
+            finally
+            {
+                _testOutputHelper.WriteLine(formattedJsonStr);
+            }
+        }
+
+        [Fact]
+        public void ShouldReturnSuccessForUpdate()
+        {
+            PetsModel pm = new PetsModel()
+            {
+                petID = 3,
+                petname = "Uchu",
+                petbreed = "Special Dog",
+                petbday = "2015/02/12"
+            };
+            bool operationSucceeded = false;
+            string formattedJsonStr = string.Empty;
+
+            try
+            {
+                _petServices.Edit(pm);
+                operationSucceeded = true;
+            }
+            catch (DataAccessException ex)
+            {
+                operationSucceeded = ex.DataAccessStatusInfo.OperationSucceeded;
+                string dataAccessStatusJsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(ex.DataAccessStatusInfo);
+                formattedJsonStr = JToken.Parse(dataAccessStatusJsonStr).ToString();
+            }
+
+            try
+            {
+                Assert.True(operationSucceeded);
+                _testOutputHelper.WriteLine("The record was successfully editted");
+            }
+            finally
+            {
+                _testOutputHelper.WriteLine(formattedJsonStr);
+            }
         }
     }
 }
