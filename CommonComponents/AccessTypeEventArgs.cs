@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CommonComponents
 {
-    class AccessTypeEventArgs : IAccessTypeEventArgs
+    public class AccessTypeEventArgs : IAccessTypeEventArgs
     {
         private AccessType _accessType;
         private bool _valuesWereChanged;

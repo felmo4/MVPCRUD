@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CommonComponents
 {
-    internal class EventHelpers
+    public static class EventHelpers
     {
         public static void RaiseEvent(Object objectRaisingEvent, 
                                         EventHandler<AccessTypeEventArgs> eventHandlerRaised,

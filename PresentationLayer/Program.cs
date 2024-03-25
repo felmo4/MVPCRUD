@@ -25,7 +25,11 @@ namespace PresentationLayer
             UnityC = new UnityContainer()
                 .RegisterType<IMainView, MainView>(new ContainerControlledLifetimeManager())
                 .RegisterType<IMainPresenter, MainPresenter>(new ContainerControlledLifetimeManager())
-                .RegisterType<IErrorMessageView, ErrorMessageView>(new ContainerControlledLifetimeManager());
+                .RegisterType<IErrorMessageView, ErrorMessageView>(new ContainerControlledLifetimeManager())
+                .RegisterType<IHelpAboutPresenter, HelpAboutPresenter>(new ContainerControlledLifetimeManager())
+                .RegisterType<IHelpAboutView, HelpAboutView>(new ContainerControlledLifetimeManager())
+                ;
+
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

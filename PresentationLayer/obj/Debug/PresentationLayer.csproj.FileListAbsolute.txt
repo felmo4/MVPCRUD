@@ -18,3 +18,4 @@ C:\Users\St. Peter Guest\Documents\Ralph\CRUD\PresentationLayer\obj\Debug\Presen
 C:\Users\St. Peter Guest\Documents\Ralph\CRUD\PresentationLayer\obj\Debug\PresentationLayer.exe
 C:\Users\St. Peter Guest\Documents\Ralph\CRUD\PresentationLayer\obj\Debug\PresentationLayer.pdb
 C:\Users\St. Peter Guest\Documents\Ralph\CRUD\PresentationLayer\obj\Debug\PresentationLayer.MainView.resources
+C:\Users\St. Peter Guest\Documents\Ralph\CRUD\PresentationLayer\obj\Debug\PresentationLayer.Views.HelpAboutView.resources

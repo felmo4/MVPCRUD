@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Common\ButtonHelper.cs" />
     <Compile Include="Common\FormHelper.cs" />
+    <Compile Include="Common\PictureBoxHelper.cs" />
     <Compile Include="IMainView.cs" />
     <Compile Include="MainView.cs">
       <SubType>Form</SubType>
@@ -65,7 +66,9 @@
       <DependentUpon>MainView.cs</DependentUpon>
     </Compile>
     <Compile Include="Presenters\BasePresenter.cs" />
+    <Compile Include="Presenters\HelpAboutPresenter.cs" />
     <Compile Include="Presenters\IBasePresenter.cs" />
+    <Compile Include="Presenters\IHelpAboutPresenter.cs" />
     <Compile Include="Presenters\IMainPresenter.cs" />
     <Compile Include="Presenters\MainPresenter.cs" />
     <Compile Include="Program.cs" />
@@ -76,7 +79,14 @@
     <Compile Include="Views\ErrorMessageView.Designer.cs">
       <DependentUpon>ErrorMessageView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\HelpAboutView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HelpAboutView.Designer.cs">
+      <DependentUpon>HelpAboutView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\IErrorMessageView.cs" />
+    <Compile Include="Views\IHelpAboutView.cs" />
     <EmbeddedResource Include="MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,9 +98,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\ErrorMessageView.resx">
       <DependentUpon>ErrorMessageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HelpAboutView.resx">
+      <DependentUpon>HelpAboutView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -115,6 +129,18 @@
       <Project>{6a668936-f44d-4ac0-a9d5-0052abb7bc51}</Project>
       <Name>CommonComponents</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dog.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

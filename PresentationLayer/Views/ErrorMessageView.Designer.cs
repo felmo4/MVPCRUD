@@ -70,6 +70,7 @@
             this.Controls.Add(this.copyBtn);
             this.Controls.Add(this.messageTxtBox);
             this.Name = "ErrorMessageView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Error Message";
             this.ResumeLayout(false);
             this.PerformLayout();
