@@ -64,5 +64,10 @@ namespace PresentationLayer
         {
             PictureBoxHelper.DisplayContextMenu(menuPB, moreOptionsCS, this);
         }
+
+        private void petsBtn_Click(object sender, EventArgs e)
+        {
+            EventHelpers.RaiseEvent(this, PetsListBtnClickEventRaised, e);
+        }
     }
 }

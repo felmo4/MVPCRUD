@@ -11,5 +11,6 @@ namespace ServiceLayer.Services.PetsServices
     {
         void ValidateModel(IPetsModel petsModel);
         void ValidateModelDataAnnotations(IPetsModel petsModel);
+        List<PetsSelectDto> GetDepartmentSelectList();
     }
 }

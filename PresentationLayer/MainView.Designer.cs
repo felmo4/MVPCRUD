@@ -34,7 +34,7 @@
             this.menuPB = new System.Windows.Forms.PictureBox();
             this.homeBtn = new System.Windows.Forms.Button();
             this.petsBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.underlineLbl = new System.Windows.Forms.Label();
             this.optionsPanel = new System.Windows.Forms.Panel();
             this.userControlPanel = new System.Windows.Forms.Panel();
             this.moreOptionsCS = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -96,16 +96,17 @@
             this.petsBtn.TabIndex = 4;
             this.petsBtn.Text = "Pets";
             this.petsBtn.UseVisualStyleBackColor = true;
+            this.petsBtn.Click += new System.EventHandler(this.petsBtn_Click);
             // 
-            // label1
+            // underlineLbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(219, 111);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 20);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "label";
+            this.underlineLbl.AutoSize = true;
+            this.underlineLbl.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.underlineLbl.Location = new System.Drawing.Point(219, 111);
+            this.underlineLbl.Name = "underlineLbl";
+            this.underlineLbl.Size = new System.Drawing.Size(42, 20);
+            this.underlineLbl.TabIndex = 5;
+            this.underlineLbl.Text = "label";
             // 
             // optionsPanel
             // 
@@ -157,7 +158,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 487);
             this.Controls.Add(this.userControlPanel);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.underlineLbl);
             this.Controls.Add(this.petsBtn);
             this.Controls.Add(this.homeBtn);
             this.Controls.Add(this.menuPB);
@@ -183,7 +184,7 @@
         private System.Windows.Forms.PictureBox menuPB;
         private System.Windows.Forms.Button homeBtn;
         private System.Windows.Forms.Button petsBtn;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label underlineLbl;
         private System.Windows.Forms.Panel optionsPanel;
         private System.Windows.Forms.Panel userControlPanel;
         private System.Windows.Forms.ContextMenuStrip moreOptionsCS;
