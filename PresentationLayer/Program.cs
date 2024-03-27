@@ -1,11 +1,15 @@
-﻿using PresentationLayer.Presenters;
+﻿using InfrastructureLayer.DataAccess.Repositories.Specific.Pets;
+using PresentationLayer.Presenters;
 using PresentationLayer.Views;
+using ServiceLayer.CommonServices;
+using ServiceLayer.Services.PetsServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Unity;
+using Unity.Injection;
 using Unity.Lifetime;
 
 namespace PresentationLayer
@@ -28,6 +32,11 @@ namespace PresentationLayer
                 .RegisterType<IErrorMessageView, ErrorMessageView>(new ContainerControlledLifetimeManager())
                 .RegisterType<IHelpAboutPresenter, HelpAboutPresenter>(new ContainerControlledLifetimeManager())
                 .RegisterType<IHelpAboutView, HelpAboutView>(new ContainerControlledLifetimeManager())
+                .RegisterType<IPetsListPresenter, PetsListPresenter>(new ContainerControlledLifetimeManager())
+                .RegisterType<IPetsServices, PetsServices>(new ContainerControlledLifetimeManager())
+                .RegisterType<IPetsRepository, PetsRepository>(new InjectionConstructor(_connectionString))
+                .RegisterType<IModelDataAnnotationCheck, ModelDataAnnotationCheck>(new ContainerControlledLifetimeManager())
+                .RegisterType<IPetsDetailView, PetsDetailView>(new ContainerControlledLifetimeManager())
                 ;
 
 

@@ -1,12 +1,119 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\st. peter guest\\documents\\ralph\\crud\\presentationlayer\\presenters\\petsdetailpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\presenters\\petsdetailpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\st. peter guest\\documents\\ralph\\crud\\presentationlayer\\views\\petsdetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\petsdetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\st. peter guest\\documents\\ralph\\crud\\presentationlayer\\views\\petsdetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\petsdetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\st. peter guest\\documents\\ralph\\crud\\presentationlayer\\presenters\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\presenters\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\st. peter guest\\documents\\ralph\\crud\\presentationlayer\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\st. peter guest\\documents\\ralph\\crud\\presentationlayer\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PetsDetailPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\PresentationLayer\\Presenters\\PetsDetailPresenter.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Presenters\\PetsDetailPresenter.cs",
+              "ToolTip": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\PresentationLayer\\Presenters\\PetsDetailPresenter.cs*",
+              "RelativeToolTip": "PresentationLayer\\Presenters\\PetsDetailPresenter.cs*",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAkwFAAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T04:12:19.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PetsDetailView.cs",
+              "DocumentMoniker": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\PresentationLayer\\Views\\PetsDetailView.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\PetsDetailView.cs",
+              "ToolTip": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\PresentationLayer\\Views\\PetsDetailView.cs",
+              "RelativeToolTip": "PresentationLayer\\Views\\PetsDetailView.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwA8AAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T03:48:19.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PetsDetailView.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\PresentationLayer\\Views\\PetsDetailView.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\PetsDetailView.cs",
+              "ToolTip": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\PresentationLayer\\Views\\PetsDetailView.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\Views\\PetsDetailView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T03:31:55.893Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainView.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\PresentationLayer\\MainView.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\MainView.cs",
+              "ToolTip": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\PresentationLayer\\MainView.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\MainView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T03:28:38.988Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\PresentationLayer\\Presenters\\MainPresenter.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Presenters\\MainPresenter.cs",
+              "ToolTip": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\PresentationLayer\\Presenters\\MainPresenter.cs",
+              "RelativeToolTip": "PresentationLayer\\Presenters\\MainPresenter.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwEEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T03:44:03.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainView.cs",
+              "DocumentMoniker": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\PresentationLayer\\MainView.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\MainView.cs",
+              "ToolTip": "C:\\Users\\St. Peter Guest\\Documents\\Ralph\\CRUD\\PresentationLayer\\MainView.cs",
+              "RelativeToolTip": "PresentationLayer\\MainView.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAIwGgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T03:06:09.912Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
         {
           "DockedWidth": 200,
           "SelectedChildIndex": -1,

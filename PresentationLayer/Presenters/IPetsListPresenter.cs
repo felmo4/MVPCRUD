@@ -1,4 +1,4 @@
-﻿namespace PresentationLayer.Presenters.UserControls
+﻿namespace PresentationLayer.Presenters
 {
     public interface IPetsListPresenter
     {

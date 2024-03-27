@@ -22,7 +22,6 @@ namespace PresentationLayer.Views
             this.Text = windowTitle;
             this.messageTxtBox.Text = errorMessage;
             this.ShowDialog();
-            this.Close();
         }
 
         private void copyBtn_Click(object sender, EventArgs e)

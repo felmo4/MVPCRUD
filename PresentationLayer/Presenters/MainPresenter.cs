@@ -1,4 +1,4 @@
-﻿using PresentationLayer.Presenters.UserControls;
+﻿using PresentationLayer.Presenters;
 using PresentationLayer.Views;
 using System;
 using System.Collections.Generic;
@@ -12,18 +12,24 @@ namespace PresentationLayer.Presenters
     class MainPresenter : IMainPresenter
     {
         IMainView _mainView;
+        IErrorMessageView _errorMessageView;
         IHelpAboutPresenter _helpAboutPresenter;
         IPetsListPresenter _petsListPresenter;
+        IPetsDetailView _petsDetailView;
         List<UserControl> _userControlList;
 
-        public event EventHandler PetsDetailViewBindingDoneEventRaised;
+        //public event EventHandler PetsDetailViewBindingDoneEventRaised;
 
         public IMainView GetMainView() { return _mainView; }
 
-        public MainPresenter(IMainView mainView, IErrorMessageView errorMessageView, IHelpAboutPresenter helpAboutPresenter)
+        public MainPresenter(IMainView mainView, IErrorMessageView errorMessageView, IHelpAboutPresenter helpAboutPresenter, 
+                                IPetsListPresenter petsListPresenter, IPetsDetailView petsDetailView)
         {
             _mainView = mainView;
+            _errorMessageView = errorMessageView;
             _helpAboutPresenter = helpAboutPresenter;
+            _petsListPresenter = petsListPresenter;
+            _petsDetailView = petsDetailView;
             SubscribeToEventsSetup();
         }
 
@@ -32,6 +38,7 @@ namespace PresentationLayer.Presenters
             _mainView.MainViewLoadedEventRaised += new EventHandler(OnMainViewLoadedEventRaised);
             _mainView.HelpAboutMenuClickEventRaised += new EventHandler(OnHelpAboutMenuClickEventRaised);
             _mainView.PetsListBtnClickEventRaised += new EventHandler(OnPetsListBtnClickEventRaised);
+            _mainView.HomeBtnClickEventRaised += new EventHandler(OnHomeBtnClickEventRaised);
         }
 
         public void OnMainViewLoadedEventRaised(object sender, EventArgs e)
@@ -55,16 +62,11 @@ namespace PresentationLayer.Presenters
             _petsListPresenter.LoadAllPetsFromDbtoGrid();
         }
 
-        private void SetUserControlVisibleInPanel(UserControl userControl)
+        private void OnHomeBtnClickEventRaised(object sender, EventArgs e)
         {
-            foreach (UserControl uc in _userControlList)
-            {
-                if (uc.Name == userControl.Name)
-                {
-                    userControl.Visible = true;
-                }
-                else uc.Visible = false;
-            }
+            _petsDetailView.ShowPetsDetailView();
         }
+
+
     }
 }

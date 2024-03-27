@@ -36,16 +36,17 @@
             this.petsBtn = new System.Windows.Forms.Button();
             this.underlineLbl = new System.Windows.Forms.Label();
             this.optionsPanel = new System.Windows.Forms.Panel();
-            this.userControlPanel = new System.Windows.Forms.Panel();
             this.moreOptionsCS = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.helpAboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.petsDetailTmr = new System.Windows.Forms.Timer(this.components);
+            this.petsListDGV = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.notifPB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilePB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuPB)).BeginInit();
             this.moreOptionsCS.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.petsListDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // notifPB
@@ -81,16 +82,17 @@
             // 
             // homeBtn
             // 
-            this.homeBtn.Location = new System.Drawing.Point(28, 104);
+            this.homeBtn.Location = new System.Drawing.Point(109, 104);
             this.homeBtn.Name = "homeBtn";
             this.homeBtn.Size = new System.Drawing.Size(91, 35);
             this.homeBtn.TabIndex = 3;
-            this.homeBtn.Text = "Home";
+            this.homeBtn.Text = "New Pet";
             this.homeBtn.UseVisualStyleBackColor = true;
+            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
             // 
             // petsBtn
             // 
-            this.petsBtn.Location = new System.Drawing.Point(122, 104);
+            this.petsBtn.Location = new System.Drawing.Point(12, 104);
             this.petsBtn.Name = "petsBtn";
             this.petsBtn.Size = new System.Drawing.Size(91, 35);
             this.petsBtn.TabIndex = 4;
@@ -102,7 +104,7 @@
             // 
             this.underlineLbl.AutoSize = true;
             this.underlineLbl.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.underlineLbl.Location = new System.Drawing.Point(219, 111);
+            this.underlineLbl.Location = new System.Drawing.Point(206, 111);
             this.underlineLbl.Name = "underlineLbl";
             this.underlineLbl.Size = new System.Drawing.Size(42, 20);
             this.underlineLbl.TabIndex = 5;
@@ -114,13 +116,6 @@
             this.optionsPanel.Name = "optionsPanel";
             this.optionsPanel.Size = new System.Drawing.Size(589, 100);
             this.optionsPanel.TabIndex = 6;
-            // 
-            // userControlPanel
-            // 
-            this.userControlPanel.Location = new System.Drawing.Point(0, 145);
-            this.userControlPanel.Name = "userControlPanel";
-            this.userControlPanel.Size = new System.Drawing.Size(589, 342);
-            this.userControlPanel.TabIndex = 0;
             // 
             // moreOptionsCS
             // 
@@ -152,14 +147,27 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // petsListDGV
+            // 
+            this.petsListDGV.AllowUserToAddRows = false;
+            this.petsListDGV.AllowUserToDeleteRows = false;
+            this.petsListDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.petsListDGV.Location = new System.Drawing.Point(0, 145);
+            this.petsListDGV.Name = "petsListDGV";
+            this.petsListDGV.ReadOnly = true;
+            this.petsListDGV.RowHeadersWidth = 62;
+            this.petsListDGV.RowTemplate.Height = 28;
+            this.petsListDGV.Size = new System.Drawing.Size(589, 355);
+            this.petsListDGV.TabIndex = 7;
+            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 487);
-            this.Controls.Add(this.userControlPanel);
-            this.Controls.Add(this.underlineLbl);
             this.Controls.Add(this.petsBtn);
+            this.Controls.Add(this.petsListDGV);
+            this.Controls.Add(this.underlineLbl);
             this.Controls.Add(this.homeBtn);
             this.Controls.Add(this.menuPB);
             this.Controls.Add(this.profilePB);
@@ -172,6 +180,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.profilePB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuPB)).EndInit();
             this.moreOptionsCS.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.petsListDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,12 +195,12 @@
         private System.Windows.Forms.Button petsBtn;
         private System.Windows.Forms.Label underlineLbl;
         private System.Windows.Forms.Panel optionsPanel;
-        private System.Windows.Forms.Panel userControlPanel;
         private System.Windows.Forms.ContextMenuStrip moreOptionsCS;
         private System.Windows.Forms.ToolStripMenuItem helpAboutToolStripMenuItem;
         private System.Windows.Forms.Timer petsDetailTmr;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.DataGridView petsListDGV;
     }
 }
 

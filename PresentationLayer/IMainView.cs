@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using System;
+using System.Collections.Generic;
 
 namespace PresentationLayer
 {
@@ -13,5 +14,7 @@ namespace PresentationLayer
         Panel GetOptionsPanel();
         void ResetUserControlPanelSizeandLocation();
         void ShowMainView();
+        void LoadPetsListToGrid(BindingSource petsListBindingSource, Dictionary<string, string> headingsDictionary,
+                                        Dictionary<string, float> gridColumnWidthsDictionary, int rowHeight);
     }
 }

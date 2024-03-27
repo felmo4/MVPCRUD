@@ -4,7 +4,7 @@ namespace PresentationLayer.Presenters
 {
     internal interface IMainPresenter
     {
-        event EventHandler PetsDetailViewBindingDoneEventRaised;
+        //event EventHandler PetsDetailViewBindingDoneEventRaised;
         IMainView GetMainView();
     }
 }
