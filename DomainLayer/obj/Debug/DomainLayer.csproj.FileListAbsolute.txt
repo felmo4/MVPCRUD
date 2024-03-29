@@ -4,3 +4,9 @@ C:\Users\St. Peter Guest\Documents\Ralph\CRUD\DomainLayer\obj\Debug\DomainLayer.
 C:\Users\St. Peter Guest\Documents\Ralph\CRUD\DomainLayer\obj\Debug\DomainLayer.csproj.CoreCompileInputs.cache
 C:\Users\St. Peter Guest\Documents\Ralph\CRUD\DomainLayer\obj\Debug\DomainLayer.dll
 C:\Users\St. Peter Guest\Documents\Ralph\CRUD\DomainLayer\obj\Debug\DomainLayer.pdb
+C:\Users\Momo\Desktop\MVPCRUD\MVPCRUD\DomainLayer\bin\Debug\DomainLayer.dll
+C:\Users\Momo\Desktop\MVPCRUD\MVPCRUD\DomainLayer\bin\Debug\DomainLayer.pdb
+C:\Users\Momo\Desktop\MVPCRUD\MVPCRUD\DomainLayer\obj\Debug\DomainLayer.csproj.AssemblyReference.cache
+C:\Users\Momo\Desktop\MVPCRUD\MVPCRUD\DomainLayer\obj\Debug\DomainLayer.csproj.CoreCompileInputs.cache
+C:\Users\Momo\Desktop\MVPCRUD\MVPCRUD\DomainLayer\obj\Debug\DomainLayer.dll
+C:\Users\Momo\Desktop\MVPCRUD\MVPCRUD\DomainLayer\obj\Debug\DomainLayer.pdb

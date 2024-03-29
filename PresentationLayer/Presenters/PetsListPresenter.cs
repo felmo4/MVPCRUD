@@ -14,10 +14,9 @@ namespace PresentationLayer.Presenters
     {
         private IPetsServices _petsServices;
         private IMainView _mainView;
-        //private IPetsListViewUC
 
-        BindingList<PetsSelectDto> _petsSelectDtoBindingList;
-        private BindingSource _petsSelectDtoBindingSource;
+        BindingList<PetsModel> _petsBindingList;
+        private BindingSource _petsBindingSource;
 
         public PetsListPresenter(IPetsServices petsServices, IMainView mainView)
         {
@@ -27,21 +26,20 @@ namespace PresentationLayer.Presenters
 
         private void SubscribeToEventsSetup()
         {
-            //_petsListViewUC
         }
 
         private void BuildDataSourceForAllPetsList()
         {
-            IEnumerable<PetsSelectDto> allPets = _petsServices.GetDepartmentSelectList();
-            _petsSelectDtoBindingList = new BindingList<PetsSelectDto>();
+            IEnumerable<PetsModel> allPets = _petsServices.GetAll();
+            _petsBindingList = new BindingList<PetsModel>();
 
-            foreach (PetsSelectDto petsMinDetailDto in allPets)
+            foreach (PetsModel petsMinDetailDto in allPets)
             {
-                _petsSelectDtoBindingList.Add(petsMinDetailDto);
+                _petsBindingList.Add(petsMinDetailDto);
             }
 
-            _petsSelectDtoBindingSource = new BindingSource();
-            this._petsSelectDtoBindingSource.DataSource = _petsSelectDtoBindingList;
+            _petsBindingSource = new BindingSource();
+            this._petsBindingSource.DataSource = _petsBindingList;
 
         }
 
@@ -58,7 +56,7 @@ namespace PresentationLayer.Presenters
             Dictionary<string, string> headingsDictionary = new Dictionary<string, string>();
             SetPetsListViewGridHeadings(headingsDictionary);
 
-            _mainView.LoadPetsListToGrid(_petsSelectDtoBindingSource, headingsDictionary, gridColumnWidthsDictionary, rowHeight);
+            _mainView.LoadPetsListToGrid(_petsBindingSource, headingsDictionary, gridColumnWidthsDictionary, rowHeight);
 
         }
 
@@ -81,7 +79,6 @@ namespace PresentationLayer.Presenters
             headingsDictionary["OptionsButton"] = "Options";
         }
 
-        //public IPetsListPresenter GetPetsListViewUC() { }
 
     }
 }

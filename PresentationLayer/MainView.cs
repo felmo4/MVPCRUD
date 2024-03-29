@@ -19,14 +19,6 @@ namespace PresentationLayer
         public event EventHandler PetsListBtnClickEventRaised;
         public event EventHandler HelpAboutMenuClickEventRaised;
 
-        //private Point _userControlPanelMovingLocation;
-        //private int _userControlPanelTimerLoopCount = 0;
-        //private const int _userControlPanelStretchIncrement = 55;
-        //private const int _userControlPanelEndingStretchTopYPos = 60;
-
-        //private Panel _userControlPanelOrigValues = null;
-
-        //private List<Button> NavigationButtonList = null;
 
         public MainView()
         {
@@ -45,10 +37,6 @@ namespace PresentationLayer
             return optionsPanel;
         }
 
-        public void ResetUserControlPanelSizeandLocation()
-        {
-            //userControlPanel.Height = _user
-        }
 
         public void LoadPetsListToGrid(BindingSource petsListBindingSource, Dictionary<string, string> headingsDictionary,
                                         Dictionary<string, float> gridColumnWidthsDictionary, int rowHeight)

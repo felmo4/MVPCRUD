@@ -9,8 +9,17 @@ namespace ServiceLayer.Services.PetsServices
 {
     public interface IPetsServices
     {
+        void Add(IPetsModel petsModel);
+
+        void Delete(IPetsModel petsModel);
+
+        void Edit(IPetsModel petsModel);
+
+        IEnumerable<PetsModel> GetAll();
+
+        PetsModel GetByID(int id);
+
         void ValidateModel(IPetsModel petsModel);
         void ValidateModelDataAnnotations(IPetsModel petsModel);
-        List<PetsSelectDto> GetDepartmentSelectList();
     }
 }

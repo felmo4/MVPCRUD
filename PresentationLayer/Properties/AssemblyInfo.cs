@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("PresentationLayer")]
 [assembly: AssemblyDescription("MVP Demo Application to demonstrate Model View Presenter")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("St. Peter Life Insurance")]
+[assembly: AssemblyCompany("St. Peter Life Plan")]
 [assembly: AssemblyProduct("PresentationLayer")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]

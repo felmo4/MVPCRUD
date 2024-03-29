@@ -45,23 +45,6 @@ namespace ServiceLayer.Services.PetsServices
             return _petsRepository.GetByID(id); 
         }
 
-        public List<PetsSelectDto> GetDepartmentSelectList()
-        {
-            List<PetsModel> AllPets = (List<PetsModel>)GetAll();
-            List<PetsSelectDto> petsMinDetailDtoList = new List<PetsSelectDto>();
-
-            foreach(PetsModel petsModel in AllPets)
-            {
-                PetsSelectDto petsMinDetailDto = new PetsSelectDto();
-                petsMinDetailDto.petID = petsModel.petID;
-                petsMinDetailDto.petname = petsModel.petname;   
-                petsMinDetailDto.petbreed = petsModel.petbreed; 
-                petsMinDetailDto.petbday = petsModel.petbday;
-                petsMinDetailDtoList.Add(petsMinDetailDto);
-            }
-            return petsMinDetailDtoList;
-        }
-
         public void ValidateModel(IPetsModel petsModel)
         {
             _modelDataAnnotationCheck.ValidateModelDataAnnotations(petsModel);

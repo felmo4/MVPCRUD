@@ -16,7 +16,7 @@ namespace PresentationLayer.Presenters
         IHelpAboutPresenter _helpAboutPresenter;
         IPetsListPresenter _petsListPresenter;
         IPetsDetailView _petsDetailView;
-        List<UserControl> _userControlList;
+
 
         //public event EventHandler PetsDetailViewBindingDoneEventRaised;
 
@@ -43,8 +43,7 @@ namespace PresentationLayer.Presenters
 
         public void OnMainViewLoadedEventRaised(object sender, EventArgs e)
         {
-            _userControlList = new List<UserControl>();
-            //_userControlList.Add(_petsListPresenter.)
+
         }
 
         public void OnHelpAboutMenuClickEventRaised(object sender, EventArgs e)
