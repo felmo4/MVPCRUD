@@ -108,7 +108,6 @@ namespace PresentationLayer
             EventHelpers.RaiseEvent(this, HomeBtnClickEventRaised, e);
         }
 
-        
 
     }
 }

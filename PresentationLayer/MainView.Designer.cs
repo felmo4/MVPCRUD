@@ -52,9 +52,10 @@
             // notifPB
             // 
             this.notifPB.Image = global::PresentationLayer.Properties.Resources.notification;
-            this.notifPB.Location = new System.Drawing.Point(297, 29);
+            this.notifPB.Location = new System.Drawing.Point(198, 19);
+            this.notifPB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.notifPB.Name = "notifPB";
-            this.notifPB.Size = new System.Drawing.Size(50, 50);
+            this.notifPB.Size = new System.Drawing.Size(33, 32);
             this.notifPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.notifPB.TabIndex = 0;
             this.notifPB.TabStop = false;
@@ -62,9 +63,10 @@
             // profilePB
             // 
             this.profilePB.Image = global::PresentationLayer.Properties.Resources.profile;
-            this.profilePB.Location = new System.Drawing.Point(397, 29);
+            this.profilePB.Location = new System.Drawing.Point(265, 19);
+            this.profilePB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.profilePB.Name = "profilePB";
-            this.profilePB.Size = new System.Drawing.Size(50, 50);
+            this.profilePB.Size = new System.Drawing.Size(33, 32);
             this.profilePB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.profilePB.TabIndex = 1;
             this.profilePB.TabStop = false;
@@ -72,9 +74,10 @@
             // menuPB
             // 
             this.menuPB.Image = global::PresentationLayer.Properties.Resources.menu;
-            this.menuPB.Location = new System.Drawing.Point(497, 29);
+            this.menuPB.Location = new System.Drawing.Point(331, 19);
+            this.menuPB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.menuPB.Name = "menuPB";
-            this.menuPB.Size = new System.Drawing.Size(50, 50);
+            this.menuPB.Size = new System.Drawing.Size(33, 32);
             this.menuPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.menuPB.TabIndex = 2;
             this.menuPB.TabStop = false;
@@ -82,9 +85,10 @@
             // 
             // homeBtn
             // 
-            this.homeBtn.Location = new System.Drawing.Point(109, 104);
+            this.homeBtn.Location = new System.Drawing.Point(73, 68);
+            this.homeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.homeBtn.Name = "homeBtn";
-            this.homeBtn.Size = new System.Drawing.Size(91, 35);
+            this.homeBtn.Size = new System.Drawing.Size(61, 23);
             this.homeBtn.TabIndex = 3;
             this.homeBtn.Text = "New Pet";
             this.homeBtn.UseVisualStyleBackColor = true;
@@ -92,9 +96,10 @@
             // 
             // petsBtn
             // 
-            this.petsBtn.Location = new System.Drawing.Point(12, 104);
+            this.petsBtn.Location = new System.Drawing.Point(8, 68);
+            this.petsBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.petsBtn.Name = "petsBtn";
-            this.petsBtn.Size = new System.Drawing.Size(91, 35);
+            this.petsBtn.Size = new System.Drawing.Size(61, 23);
             this.petsBtn.TabIndex = 4;
             this.petsBtn.Text = "Pets";
             this.petsBtn.UseVisualStyleBackColor = true;
@@ -104,17 +109,19 @@
             // 
             this.underlineLbl.AutoSize = true;
             this.underlineLbl.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.underlineLbl.Location = new System.Drawing.Point(206, 111);
+            this.underlineLbl.Location = new System.Drawing.Point(137, 72);
+            this.underlineLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.underlineLbl.Name = "underlineLbl";
-            this.underlineLbl.Size = new System.Drawing.Size(42, 20);
+            this.underlineLbl.Size = new System.Drawing.Size(29, 13);
             this.underlineLbl.TabIndex = 5;
             this.underlineLbl.Text = "label";
             // 
             // optionsPanel
             // 
             this.optionsPanel.Location = new System.Drawing.Point(0, 0);
+            this.optionsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.optionsPanel.Name = "optionsPanel";
-            this.optionsPanel.Size = new System.Drawing.Size(589, 100);
+            this.optionsPanel.Size = new System.Drawing.Size(393, 65);
             this.optionsPanel.TabIndex = 6;
             // 
             // moreOptionsCS
@@ -125,25 +132,25 @@
             this.settingsToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.moreOptionsCS.Name = "moreOptionsCS";
-            this.moreOptionsCS.Size = new System.Drawing.Size(177, 100);
+            this.moreOptionsCS.Size = new System.Drawing.Size(181, 92);
             // 
             // helpAboutToolStripMenuItem
             // 
             this.helpAboutToolStripMenuItem.Name = "helpAboutToolStripMenuItem";
-            this.helpAboutToolStripMenuItem.Size = new System.Drawing.Size(176, 32);
+            this.helpAboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.helpAboutToolStripMenuItem.Text = "Help About";
             this.helpAboutToolStripMenuItem.Click += new System.EventHandler(this.helpAboutToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(176, 32);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(176, 32);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -152,19 +159,20 @@
             this.petsListDGV.AllowUserToAddRows = false;
             this.petsListDGV.AllowUserToDeleteRows = false;
             this.petsListDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.petsListDGV.Location = new System.Drawing.Point(0, 145);
+            this.petsListDGV.Location = new System.Drawing.Point(0, 94);
+            this.petsListDGV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.petsListDGV.Name = "petsListDGV";
             this.petsListDGV.ReadOnly = true;
             this.petsListDGV.RowHeadersWidth = 62;
             this.petsListDGV.RowTemplate.Height = 28;
-            this.petsListDGV.Size = new System.Drawing.Size(589, 355);
+            this.petsListDGV.Size = new System.Drawing.Size(393, 231);
             this.petsListDGV.TabIndex = 7;
             // 
             // MainView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(589, 487);
+            this.ClientSize = new System.Drawing.Size(393, 317);
             this.Controls.Add(this.petsBtn);
             this.Controls.Add(this.petsListDGV);
             this.Controls.Add(this.underlineLbl);
@@ -173,6 +181,7 @@
             this.Controls.Add(this.profilePB);
             this.Controls.Add(this.notifPB);
             this.Controls.Add(this.optionsPanel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MVP Demo";

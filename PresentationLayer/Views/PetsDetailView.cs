@@ -14,6 +14,8 @@ namespace PresentationLayer.Views
     public partial class PetsDetailView : Form, IPetsDetailView
     {
         public event EventHandler<AccessTypeEventArgs> PetsDetailSaveBtnClickEventRaised;
+        private AccessTypeEventArgs _accessType = new AccessTypeEventArgs();
+
 
         public PetsDetailView()
         {
@@ -25,9 +27,15 @@ namespace PresentationLayer.Views
             this.ShowDialog();
         }
 
+        public string GetPetID() { return petIDTxtB.Text; }
+        public string GetPetName() { return petnameTxtB.Text; }
+        public string GetPetBreed() { return petbreedTxtB.Text; }
+        public string GetPetBday() { return petbdayDTPicker.Value.ToString("yyyy-MM-dd"); }
+
+
         private void addBtn_Click(object sender, EventArgs e)
         {
-
+            EventHelpers.RaiseEvent(this, PetsDetailSaveBtnClickEventRaised, _accessType);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -35,6 +43,17 @@ namespace PresentationLayer.Views
             Close();
         }
 
-        
+        private void PetsDetailView_Load(object sender, EventArgs e)
+        {
+            petnameTxtB.Focus();
+            if (petIDTxtB.Text == string.Empty)
+            {
+                _accessType.AccessTypeValue = AccessTypeEventArgs.AccessType.Add;
+            }
+            else
+            {
+                _accessType.AccessTypeValue = AccessTypeEventArgs.AccessType.Edit;
+            }
+        }
     }
 }

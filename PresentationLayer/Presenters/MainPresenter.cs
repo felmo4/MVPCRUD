@@ -12,24 +12,22 @@ namespace PresentationLayer.Presenters
     class MainPresenter : IMainPresenter
     {
         IMainView _mainView;
-        IErrorMessageView _errorMessageView;
         IHelpAboutPresenter _helpAboutPresenter;
         IPetsListPresenter _petsListPresenter;
-        IPetsDetailView _petsDetailView;
+        IPetsDetailPresenter _petsDetailPresenter;
 
 
         //public event EventHandler PetsDetailViewBindingDoneEventRaised;
 
         public IMainView GetMainView() { return _mainView; }
 
-        public MainPresenter(IMainView mainView, IErrorMessageView errorMessageView, IHelpAboutPresenter helpAboutPresenter, 
-                                IPetsListPresenter petsListPresenter, IPetsDetailView petsDetailView)
+        public MainPresenter(IMainView mainView, IHelpAboutPresenter helpAboutPresenter, 
+                                IPetsListPresenter petsListPresenter, IPetsDetailPresenter petsDetailPresenter)
         {
             _mainView = mainView;
-            _errorMessageView = errorMessageView;
             _helpAboutPresenter = helpAboutPresenter;
             _petsListPresenter = petsListPresenter;
-            _petsDetailView = petsDetailView;
+            _petsDetailPresenter = petsDetailPresenter;
             SubscribeToEventsSetup();
         }
 
@@ -63,7 +61,7 @@ namespace PresentationLayer.Presenters
 
         private void OnHomeBtnClickEventRaised(object sender, EventArgs e)
         {
-            _petsDetailView.ShowPetsDetailView();
+            _petsDetailPresenter.GetPetsDetailView().ShowPetsDetailView();
         }
 
 

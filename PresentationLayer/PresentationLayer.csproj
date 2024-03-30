@@ -70,8 +70,10 @@
     <Compile Include="Presenters\IBasePresenter.cs" />
     <Compile Include="Presenters\IHelpAboutPresenter.cs" />
     <Compile Include="Presenters\IMainPresenter.cs" />
+    <Compile Include="Presenters\IPetsDetailPresenter.cs" />
     <Compile Include="Presenters\MainPresenter.cs" />
     <Compile Include="Presenters\IPetsListPresenter.cs" />
+    <Compile Include="Presenters\PetsDetailPresenter.cs" />
     <Compile Include="Presenters\PetsListPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -132,10 +134,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Presenters\UserControls\" />
-    <Folder Include="Views\UserControls\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\CommonComponents\CommonComponents.csproj">
       <Project>{6a668936-f44d-4ac0-a9d5-0052abb7bc51}</Project>

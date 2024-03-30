@@ -8,5 +8,9 @@ namespace PresentationLayer.Views
         event EventHandler<AccessTypeEventArgs> PetsDetailSaveBtnClickEventRaised;
 
         void ShowPetsDetailView();
+        string GetPetID();
+        string GetPetName();
+        string GetPetBreed();
+        string GetPetBday();
     }
 }
