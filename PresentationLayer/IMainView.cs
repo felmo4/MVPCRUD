@@ -10,6 +10,7 @@ namespace PresentationLayer
         event EventHandler HomeBtnClickEventRaised;
         event EventHandler MainViewLoadedEventRaised;
         event EventHandler PetsListBtnClickEventRaised;
+        event EventHandler EditPetMenuClickEventRaised;
 
         Panel GetOptionsPanel();
         void ShowMainView();

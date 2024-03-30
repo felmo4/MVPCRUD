@@ -20,6 +20,7 @@ namespace PresentationLayer.Views
         public PetsDetailView()
         {
             InitializeComponent();
+            petnameTxtB.Focus();
         }
 
         public void ShowPetsDetailView()
@@ -45,7 +46,7 @@ namespace PresentationLayer.Views
 
         private void PetsDetailView_Load(object sender, EventArgs e)
         {
-            petnameTxtB.Focus();
+            
             if (petIDTxtB.Text == string.Empty)
             {
                 _accessType.AccessTypeValue = AccessTypeEventArgs.AccessType.Add;

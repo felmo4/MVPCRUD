@@ -42,18 +42,22 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.petsDetailTmr = new System.Windows.Forms.Timer(this.components);
             this.petsListDGV = new System.Windows.Forms.DataGridView();
+            this.petOptionsCMS = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.notifPB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilePB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuPB)).BeginInit();
             this.moreOptionsCS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.petsListDGV)).BeginInit();
+            this.petOptionsCMS.SuspendLayout();
             this.SuspendLayout();
             // 
             // notifPB
             // 
             this.notifPB.Image = global::PresentationLayer.Properties.Resources.notification;
             this.notifPB.Location = new System.Drawing.Point(198, 19);
-            this.notifPB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.notifPB.Margin = new System.Windows.Forms.Padding(2);
             this.notifPB.Name = "notifPB";
             this.notifPB.Size = new System.Drawing.Size(33, 32);
             this.notifPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -64,7 +68,7 @@
             // 
             this.profilePB.Image = global::PresentationLayer.Properties.Resources.profile;
             this.profilePB.Location = new System.Drawing.Point(265, 19);
-            this.profilePB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.profilePB.Margin = new System.Windows.Forms.Padding(2);
             this.profilePB.Name = "profilePB";
             this.profilePB.Size = new System.Drawing.Size(33, 32);
             this.profilePB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -75,7 +79,7 @@
             // 
             this.menuPB.Image = global::PresentationLayer.Properties.Resources.menu;
             this.menuPB.Location = new System.Drawing.Point(331, 19);
-            this.menuPB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.menuPB.Margin = new System.Windows.Forms.Padding(2);
             this.menuPB.Name = "menuPB";
             this.menuPB.Size = new System.Drawing.Size(33, 32);
             this.menuPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -86,7 +90,7 @@
             // homeBtn
             // 
             this.homeBtn.Location = new System.Drawing.Point(73, 68);
-            this.homeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.homeBtn.Margin = new System.Windows.Forms.Padding(2);
             this.homeBtn.Name = "homeBtn";
             this.homeBtn.Size = new System.Drawing.Size(61, 23);
             this.homeBtn.TabIndex = 3;
@@ -97,7 +101,7 @@
             // petsBtn
             // 
             this.petsBtn.Location = new System.Drawing.Point(8, 68);
-            this.petsBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.petsBtn.Margin = new System.Windows.Forms.Padding(2);
             this.petsBtn.Name = "petsBtn";
             this.petsBtn.Size = new System.Drawing.Size(61, 23);
             this.petsBtn.TabIndex = 4;
@@ -119,7 +123,7 @@
             // optionsPanel
             // 
             this.optionsPanel.Location = new System.Drawing.Point(0, 0);
-            this.optionsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.optionsPanel.Margin = new System.Windows.Forms.Padding(2);
             this.optionsPanel.Name = "optionsPanel";
             this.optionsPanel.Size = new System.Drawing.Size(393, 65);
             this.optionsPanel.TabIndex = 6;
@@ -132,25 +136,25 @@
             this.settingsToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.moreOptionsCS.Name = "moreOptionsCS";
-            this.moreOptionsCS.Size = new System.Drawing.Size(181, 92);
+            this.moreOptionsCS.Size = new System.Drawing.Size(136, 70);
             // 
             // helpAboutToolStripMenuItem
             // 
             this.helpAboutToolStripMenuItem.Name = "helpAboutToolStripMenuItem";
-            this.helpAboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.helpAboutToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.helpAboutToolStripMenuItem.Text = "Help About";
             this.helpAboutToolStripMenuItem.Click += new System.EventHandler(this.helpAboutToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -160,13 +164,36 @@
             this.petsListDGV.AllowUserToDeleteRows = false;
             this.petsListDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.petsListDGV.Location = new System.Drawing.Point(0, 94);
-            this.petsListDGV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.petsListDGV.Margin = new System.Windows.Forms.Padding(2);
             this.petsListDGV.Name = "petsListDGV";
             this.petsListDGV.ReadOnly = true;
             this.petsListDGV.RowHeadersWidth = 62;
             this.petsListDGV.RowTemplate.Height = 28;
             this.petsListDGV.Size = new System.Drawing.Size(393, 231);
             this.petsListDGV.TabIndex = 7;
+            this.petsListDGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.petsListDGV_CellClick);
+            // 
+            // petOptionsCMS
+            // 
+            this.petOptionsCMS.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editToolStripMenuItem,
+            this.deleteToolStripMenuItem});
+            this.petOptionsCMS.Name = "petOptionsCMS";
+            this.petOptionsCMS.Size = new System.Drawing.Size(181, 70);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // MainView
             // 
@@ -181,7 +208,7 @@
             this.Controls.Add(this.profilePB);
             this.Controls.Add(this.notifPB);
             this.Controls.Add(this.optionsPanel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MVP Demo";
@@ -190,6 +217,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.menuPB)).EndInit();
             this.moreOptionsCS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.petsListDGV)).EndInit();
+            this.petOptionsCMS.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,6 +238,9 @@
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.DataGridView petsListDGV;
+        private System.Windows.Forms.ContextMenuStrip petOptionsCMS;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
     }
 }
 

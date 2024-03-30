@@ -37,6 +37,7 @@ namespace PresentationLayer.Presenters
             _mainView.HelpAboutMenuClickEventRaised += new EventHandler(OnHelpAboutMenuClickEventRaised);
             _mainView.PetsListBtnClickEventRaised += new EventHandler(OnPetsListBtnClickEventRaised);
             _mainView.HomeBtnClickEventRaised += new EventHandler(OnHomeBtnClickEventRaised);
+            _mainView.EditPetMenuClickEventRaised += new EventHandler(OnEditPetMenuClickEventRaised);
         }
 
         public void OnMainViewLoadedEventRaised(object sender, EventArgs e)
@@ -62,6 +63,11 @@ namespace PresentationLayer.Presenters
         private void OnHomeBtnClickEventRaised(object sender, EventArgs e)
         {
             _petsDetailPresenter.GetPetsDetailView().ShowPetsDetailView();
+        }
+
+        private void OnEditPetMenuClickEventRaised(object sender, EventArgs e)
+        {
+
         }
 
 

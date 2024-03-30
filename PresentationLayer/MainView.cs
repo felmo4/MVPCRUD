@@ -18,7 +18,7 @@ namespace PresentationLayer
         public event EventHandler HomeBtnClickEventRaised;
         public event EventHandler PetsListBtnClickEventRaised;
         public event EventHandler HelpAboutMenuClickEventRaised;
-
+        public event EventHandler EditPetMenuClickEventRaised;
 
         public MainView()
         {
@@ -108,6 +108,22 @@ namespace PresentationLayer
             EventHelpers.RaiseEvent(this, HomeBtnClickEventRaised, e);
         }
 
+        private void petsListDGV_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == petsListDGV.Columns["Options"].Index)
+            {
+                petOptionsCMS.Show(Cursor.Position.X, Cursor.Position.Y);
+            }
+        }
 
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EventHelpers.RaiseEvent(this, EditPetMenuClickEventRaised, e);
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
