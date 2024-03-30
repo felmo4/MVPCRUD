@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Momo\\Desktop\\MVPCRUD\\MVPCRUD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\momo\\desktop\\mvpcrud\\mvpcrud\\presentationlayer\\presenters\\petslistpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\presenters\\petslistpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\momo\\desktop\\mvpcrud\\mvpcrud\\presentationlayer\\presenters\\petsdetailpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\presenters\\petsdetailpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\momo\\desktop\\mvpcrud\\mvpcrud\\presentationlayer\\views\\petsdetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\momo\\desktop\\mvpcrud\\mvpcrud\\presentationlayer\\presenters\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\presenters\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|C:\\Users\\Momo\\Desktop\\MVPCRUD\\MVPCRUD\\presentationlayer\\views\\petsdetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B2A7919-98AC-4CBA-811B-23A9242FB2CA}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\petsdetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,30 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PetsListPresenter.cs",
-              "DocumentMoniker": "C:\\Users\\Momo\\Desktop\\MVPCRUD\\MVPCRUD\\PresentationLayer\\Presenters\\PetsListPresenter.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Presenters\\PetsListPresenter.cs",
-              "ToolTip": "C:\\Users\\Momo\\Desktop\\MVPCRUD\\MVPCRUD\\PresentationLayer\\Presenters\\PetsListPresenter.cs",
-              "RelativeToolTip": "PresentationLayer\\Presenters\\PetsListPresenter.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "MainPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\Momo\\Desktop\\MVPCRUD\\MVPCRUD\\PresentationLayer\\Presenters\\MainPresenter.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Presenters\\MainPresenter.cs",
+              "ToolTip": "C:\\Users\\Momo\\Desktop\\MVPCRUD\\MVPCRUD\\PresentationLayer\\Presenters\\MainPresenter.cs",
+              "RelativeToolTip": "PresentationLayer\\Presenters\\MainPresenter.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAEQAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T23:32:25.112Z",
+              "WhenOpened": "2024-03-30T07:21:47.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "PetsDetailPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\Momo\\Desktop\\MVPCRUD\\MVPCRUD\\PresentationLayer\\Presenters\\PetsDetailPresenter.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Presenters\\PetsDetailPresenter.cs",
+              "ToolTip": "C:\\Users\\Momo\\Desktop\\MVPCRUD\\MVPCRUD\\PresentationLayer\\Presenters\\PetsDetailPresenter.cs",
+              "RelativeToolTip": "PresentationLayer\\Presenters\\PetsDetailPresenter.cs",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAAADkAAACKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T03:20:26.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PetsDetailView.cs",
               "DocumentMoniker": "C:\\Users\\Momo\\Desktop\\MVPCRUD\\MVPCRUD\\PresentationLayer\\Views\\PetsDetailView.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Views\\PetsDetailView.cs",
               "ToolTip": "C:\\Users\\Momo\\Desktop\\MVPCRUD\\MVPCRUD\\PresentationLayer\\Views\\PetsDetailView.cs",
               "RelativeToolTip": "PresentationLayer\\Views\\PetsDetailView.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAD8AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-29T23:30:07.16Z",
               "EditorCaption": ""

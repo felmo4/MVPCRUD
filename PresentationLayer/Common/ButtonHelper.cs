@@ -51,11 +51,5 @@ namespace PresentationLayer.Common
             }
         }
 
-        static public void SetUnderlinePosition(Button button, Label underlineLabel)
-        {
-            underlineLabel.Width = button.Bounds.Width - (int)(button.Bounds.Width * .15); ;
-            underlineLabel.Left = button.Bounds.Left - (int)(button.Bounds.Width * .08); ;
-            underlineLabel.Top = button.Top + button.Height;
-        }
     }
 }

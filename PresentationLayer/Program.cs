@@ -1,4 +1,5 @@
-﻿using InfrastructureLayer.DataAccess.Repositories.Specific.Pets;
+﻿using DomainLayer.Models.Pets;
+using InfrastructureLayer.DataAccess.Repositories.Specific.Pets;
 using PresentationLayer.Presenters;
 using PresentationLayer.Views;
 using ServiceLayer.CommonServices;
@@ -37,6 +38,9 @@ namespace PresentationLayer
                 .RegisterType<IPetsRepository, PetsRepository>(new InjectionConstructor(_connectionString))
                 .RegisterType<IModelDataAnnotationCheck, ModelDataAnnotationCheck>(new ContainerControlledLifetimeManager())
                 .RegisterType<IPetsDetailView, PetsDetailView>(new ContainerControlledLifetimeManager())
+                .RegisterType<IPetsDetailPresenter, PetsDetailPresenter>(new ContainerControlledLifetimeManager())
+                .RegisterType<IPetsModel, PetsModel>(new ContainerControlledLifetimeManager())
+
                 ;
 
 

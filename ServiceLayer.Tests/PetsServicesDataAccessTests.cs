@@ -76,9 +76,9 @@ namespace ServiceLayer.Tests
         {
             PetsModel pm = new PetsModel()
             {
-                petname = "Uchu",
-                petbreed = "Special",
-                petbday = "2015/02/15"
+                petname = "Chut",
+                petbreed = "Pug",
+                petbday = "2020/08/20"
             };
             bool operationSucceeded = false;
             string formattedJsonStr = string.Empty;
