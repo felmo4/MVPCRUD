@@ -1,4 +1,5 @@
-﻿using PresentationLayer.Presenters;
+﻿using CommonComponents;
+using PresentationLayer.Presenters;
 using PresentationLayer.Views;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace PresentationLayer.Presenters
         IHelpAboutPresenter _helpAboutPresenter;
         IPetsListPresenter _petsListPresenter;
         IPetsDetailPresenter _petsDetailPresenter;
-
+        
 
         //public event EventHandler PetsDetailViewBindingDoneEventRaised;
 
@@ -37,7 +38,8 @@ namespace PresentationLayer.Presenters
             _mainView.HelpAboutMenuClickEventRaised += new EventHandler(OnHelpAboutMenuClickEventRaised);
             _mainView.PetsListBtnClickEventRaised += new EventHandler(OnPetsListBtnClickEventRaised);
             _mainView.HomeBtnClickEventRaised += new EventHandler(OnHomeBtnClickEventRaised);
-            _mainView.EditPetMenuClickEventRaised += new EventHandler(OnEditPetMenuClickEventRaised);
+            _mainView.EditPetMenuClickEventRaised += new EventHandler<AccessTypeEventArgs>(OnEditPetMenuClickEventRaised);
+            _mainView.DeletePetMenuClickEventRaised += new EventHandler<AccessTypeEventArgs>(OnDeletePetMenuClickEventRaised);
         }
 
         public void OnMainViewLoadedEventRaised(object sender, EventArgs e)
@@ -65,9 +67,14 @@ namespace PresentationLayer.Presenters
             _petsDetailPresenter.GetPetsDetailView().ShowPetsDetailView();
         }
 
-        private void OnEditPetMenuClickEventRaised(object sender, EventArgs e)
+        private void OnEditPetMenuClickEventRaised(object sender, AccessTypeEventArgs e)
         {
+            _petsDetailPresenter.GetPetsDetailView().ShowPetsDetailViewEdit(e.selectedRow);
+        }
 
+        private void OnDeletePetMenuClickEventRaised(object sender, AccessTypeEventArgs e)
+        {
+            _petsListPresenter.DeletePetFromList(e.selectedRow);
         }
 
 

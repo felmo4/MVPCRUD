@@ -79,6 +79,11 @@ namespace PresentationLayer.Presenters
             headingsDictionary["OptionsButton"] = "Options";
         }
 
-
+        public void DeletePetFromList(DataGridViewRow selectedRow)
+        {
+            PetsModel pm = new PetsModel() { petID = int.Parse(selectedRow.Cells["petID"].Value.ToString()) };
+            _petsServices.Delete(pm);
+            _mainView.RefreshMainView();
+        }
     }
 }

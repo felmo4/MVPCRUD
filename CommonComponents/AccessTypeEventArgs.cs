@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CommonComponents
 {
@@ -10,6 +11,8 @@ namespace CommonComponents
     {
         private AccessType _accessType;
         private bool _valuesWereChanged;
+
+        public DataGridViewRow selectedRow { get; set; }
 
         public enum AccessType
         {

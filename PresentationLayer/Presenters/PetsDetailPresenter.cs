@@ -15,12 +15,15 @@ namespace PresentationLayer.Presenters
         private IPetsServices _petsServices;
         private IPetsDetailView _petsDetailView;
         private IBasePresenter _basePresenter;
+        private IMainView _mainView;
 
-        public PetsDetailPresenter(IPetsServices petsServices, IPetsDetailView petsDetailView, IBasePresenter basePresenter)
+        public PetsDetailPresenter(IPetsServices petsServices, IPetsDetailView petsDetailView, 
+                                    IBasePresenter basePresenter, IMainView mainView)
         {
             _petsServices = petsServices;
             _petsDetailView = petsDetailView;
             _basePresenter = basePresenter;
+            _mainView = mainView;
             SubscribeToEventsSetup();
         }
 
@@ -47,8 +50,18 @@ namespace PresentationLayer.Presenters
                 _petsServices.Add(pm);
             }
             else {
-                
+                PetsModel pm = new PetsModel()
+                {
+                    petID = _petsDetailView.GetPetID(),
+                    petname = _petsDetailView.GetPetName(),
+                    petbreed = _petsDetailView.GetPetBreed(),
+                    petbday = _petsDetailView.GetPetBday()
+                };
+                _petsServices.Edit(pm);
+
             }
+            _petsDetailView.ClosePetsDetailView();
+            _mainView.RefreshMainView();
         }
 
     }

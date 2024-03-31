@@ -1,5 +1,6 @@
 ﻿using CommonComponents;
 using System;
+using System.Windows.Forms;
 
 namespace PresentationLayer.Views
 {
@@ -8,7 +9,9 @@ namespace PresentationLayer.Views
         event EventHandler<AccessTypeEventArgs> PetsDetailSaveBtnClickEventRaised;
 
         void ShowPetsDetailView();
-        string GetPetID();
+        void ShowPetsDetailViewEdit(DataGridViewRow selectedRow);
+        void ClosePetsDetailView();
+        int GetPetID();
         string GetPetName();
         string GetPetBreed();
         string GetPetBday();

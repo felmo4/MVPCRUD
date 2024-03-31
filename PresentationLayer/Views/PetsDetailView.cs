@@ -20,18 +20,30 @@ namespace PresentationLayer.Views
         public PetsDetailView()
         {
             InitializeComponent();
-            petnameTxtB.Focus();
         }
 
         public void ShowPetsDetailView()
         {
+            ClearTextBoxes();
+            petnameTxtB.Focus();
             this.ShowDialog();
         }
 
-        public string GetPetID() { return petIDTxtB.Text; }
+        public void ShowPetsDetailViewEdit(DataGridViewRow selectedRow)
+        {           
+            petIDTxtB.Text = selectedRow.Cells["petID"].Value.ToString();
+            petnameTxtB.Text = selectedRow.Cells["petname"].Value.ToString();
+            petbreedTxtB.Text = selectedRow.Cells["petbreed"].Value.ToString();
+            petbdayDTPicker.Text = selectedRow.Cells["petbday"].Value.ToString();
+            this.ShowDialog();
+        }
+
+        public int GetPetID() { return int.Parse(petIDTxtB.Text); }
         public string GetPetName() { return petnameTxtB.Text; }
         public string GetPetBreed() { return petbreedTxtB.Text; }
         public string GetPetBday() { return petbdayDTPicker.Value.ToString("yyyy-MM-dd"); }
+
+        public void ClosePetsDetailView() { Close(); }
 
 
         private void addBtn_Click(object sender, EventArgs e)
@@ -41,7 +53,7 @@ namespace PresentationLayer.Views
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Close();
+            ClosePetsDetailView();
         }
 
         private void PetsDetailView_Load(object sender, EventArgs e)
@@ -55,6 +67,14 @@ namespace PresentationLayer.Views
             {
                 _accessType.AccessTypeValue = AccessTypeEventArgs.AccessType.Edit;
             }
+        }
+
+        private void ClearTextBoxes()
+        {
+            petIDTxtB.Clear();
+            petnameTxtB.Clear();
+            petbreedTxtB.Clear();
+            petbdayDTPicker.Value = DateTime.Now;
         }
     }
 }

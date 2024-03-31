@@ -1,6 +1,7 @@
 ﻿using System.Windows.Forms;
 using System;
 using System.Collections.Generic;
+using CommonComponents;
 
 namespace PresentationLayer
 {
@@ -10,8 +11,10 @@ namespace PresentationLayer
         event EventHandler HomeBtnClickEventRaised;
         event EventHandler MainViewLoadedEventRaised;
         event EventHandler PetsListBtnClickEventRaised;
-        event EventHandler EditPetMenuClickEventRaised;
+        event EventHandler<AccessTypeEventArgs> EditPetMenuClickEventRaised;
+        event EventHandler<AccessTypeEventArgs> DeletePetMenuClickEventRaised;
 
+        void RefreshMainView();
         Panel GetOptionsPanel();
         void ShowMainView();
         void LoadPetsListToGrid(BindingSource petsListBindingSource, Dictionary<string, string> headingsDictionary,

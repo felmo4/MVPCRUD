@@ -18,7 +18,8 @@ namespace PresentationLayer
         public event EventHandler HomeBtnClickEventRaised;
         public event EventHandler PetsListBtnClickEventRaised;
         public event EventHandler HelpAboutMenuClickEventRaised;
-        public event EventHandler EditPetMenuClickEventRaised;
+        public event EventHandler<AccessTypeEventArgs> EditPetMenuClickEventRaised;
+        public event EventHandler<AccessTypeEventArgs> DeletePetMenuClickEventRaised;
 
         public MainView()
         {
@@ -35,6 +36,11 @@ namespace PresentationLayer
         public Panel GetOptionsPanel()
         {
             return optionsPanel;
+        }
+
+        public void RefreshMainView()
+        {
+            petsBtn.PerformClick();
         }
 
 
@@ -118,12 +124,16 @@ namespace PresentationLayer
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EventHelpers.RaiseEvent(this, EditPetMenuClickEventRaised, e);
+            AccessTypeEventArgs accessType = new AccessTypeEventArgs();
+            accessType.selectedRow = petsListDGV.CurrentRow;
+            EventHelpers.RaiseEvent(this, EditPetMenuClickEventRaised,accessType);
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            AccessTypeEventArgs accessType = new AccessTypeEventArgs();
+            accessType.selectedRow = petsListDGV.CurrentRow;
+            EventHelpers.RaiseEvent(this, DeletePetMenuClickEventRaised, accessType);
         }
     }
 }
